@@ -1,0 +1,121 @@
+# ====================================
+#     PLASMA CORE CONFIGURATION
+# ====================================
+
+database:
+  type: sqlite
+
+auth:
+  enabled: true
+  session-minutes: 60
+  min-password-length: 4
+  max-password-length: 32
+  max-attempts: 5
+
+homes:
+  max-homes: 3
+  teleport-delay: 3
+
+compass:
+  request-timeout: 60
+  update-interval: 5
+
+coins:
+  starting-balance: 100
+  currency-name: "PlasmaCoins"
+  currency-symbol: "⛃"
+  rewards:
+    kill-mob: 1
+    kill-player: 10
+    break-ore-diamond: 5
+    break-ore-iron: 1
+
+market:
+  world-name: "market"
+  shop-rent-price: 50
+  shop-rent-days: 7
+
+gender:
+  enabled: true
+
+logs:
+  enabled: true
+  days-to-keep: 30
+
+hud:
+  enabled: true
+  format: "&c❤ {health} &b⛃ {coins} &a☀ {time}"
+  update-interval: 20
+
+scoreboard:
+  enabled: true
+  title: "&b&lPLASMA"
+  lines:
+    - ""
+    - "&fИгрок: &a{player}"
+    - "&fБаланс: &e{coins}⛃"
+    - ""
+    - "&fОнлайн: &a{online}"
+    - "&fКоординаты:"
+    - "&7{x} {y} {z}"
+    - ""
+    - "&bplasma.is-a.dev"
+
+tab:
+  enabled: true
+  header: "\n&b&lPLASMA SERVER\n"
+  footer: "\n&7Онлайн: &a{online}&7/&a{max}\n"
+
+damage-indicator:
+  enabled: true
+  format: "&c-{damage}"
+
+sit:
+  enabled: true
+
+trades:
+  enabled: true
+  timeout: 60
+
+heads:
+  enabled: true
+  drop-chance: 5
+
+friends:
+  max-friends: 50
+
+emotes:
+  enabled: true
+
+messages:
+  prefix: "&b&lPLASMA &8» &r"
+  register-success: "&aВы успешно зарегистрировались!"
+  login-success: "&aВы вошли в аккаунт!"
+  already-registered: "&cВы уже зарегистрированы!"
+  not-registered: "&cВы не зарегистрированы! /register <пароль>"
+  wrong-password: "&cНеверный пароль! Попыток осталось: {attempts}"
+  need-login: "&cВойдите в аккаунт! /login <пароль>"
+  home-set: "&aДом &e{name} &aустановлен!"
+  home-deleted: "&aДом &e{name} &aудален!"
+  home-teleport: "&aТелепортация домой через {time} сек..."
+  home-not-found: "&cДом не найден!"
+  max-homes: "&cМаксимум домов: {max}"
+  find-request-sent: "&aЗапрос отправлен игроку &e{player}"
+  find-request-received: "&e{player} &aхочет узнать ваши координаты"
+  find-accepted: "&aЗапрос принят! Следуй за стрелкой"
+  find-denied: "&cИгрок отклонил запрос"
+  balance: "&aВаш баланс: &e{balance}⛃"
+  pay-success: "&aВы отправили &e{amount}⛃ &aигроку &e{player}"
+  pay-received: "&aВы получили &e{amount}⛃ &aот игрока &e{player}"
+  not-enough-coins: "&cНедостаточно PlasmaCoins!"
+  market-teleport: "&aДобро пожаловать на рынок!"
+  market-leave: "&aВы покинули рынок"
+  player-banned: "&aИгрок &e{player} &aзабанен!"
+  player-kicked: "&aИгрок &e{player} &aкикнут!"
+  player-muted: "&aИгрок &e{player} &aзамучен!"
+  trade-request: "&e{player} &aпредлагает обмен. /trade accept"
+  trade-accepted: "&aОбмен начат!"
+  trade-cancelled: "&cОбмен отменен"
+  friend-added: "&aИгрок &e{player} &aдобавлен в друзья!"
+  friend-removed: "&aИгрок &e{player} &aудален из друзей"
+  friend-online: "&aВаш друг &e{player} &aвошел на сервер!"
